@@ -83,7 +83,7 @@ header {
 
 .program hr {
   background-color: #fb0606;
-
+  height: 3px;
   width: 30%;
   margin: 0 auto;
 }
@@ -132,10 +132,11 @@ header {
 section.speakers {
   padding: 5%;
 }
-hr {
+section.speakers hr {
   background-color: #fb0606;
   width: 30%;
   margin: 0 auto;
+  height: 3px;
 }
 h3 {
   font-size: 30px;
@@ -202,6 +203,7 @@ section.partner hr {
   background-color: #fb0606;
   width: 30%;
   margin: 0 auto;
+  height: 3px;
 }
 
 section.partner ul li {
@@ -238,6 +240,105 @@ footer div img {
 
 footer p {
   font-size: 14px;
+}
+
+/* ABOUT */
+.background {
+  background-position: center;
+}
+.header .hello {
+  display: flex;
+  justify-content: center;
+}
+.header .hello span {
+  font-size: 22px;
+  color: #ec5242;
+  margin-bottom: 10px;
+}
+.header .about-h1 {
+  font-size: 34px;
+  text-align: center;
+}
+.header .description {
+  justify-content: center;
+}
+.header .queries {
+  text-align: center;
+}
+
+/* EMPOWERING */
+.empowering {
+  padding: 5%;
+}
+.empowering h2 {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.empowering hr {
+  color: #fb0606;
+  height: 3px;
+  width: 30%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.empowering ul {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.empowering ul li {
+  font-size: 18px;
+}
+/* CONFERENCE */
+.conference {
+  padding: 5%;
+}
+.conference hr {
+  color: #fb0606;
+  height: 3px;
+  width: 30%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.conference .col {
+  margin-top: 30px;
+}
+
+.conference .col .events img {
+  height: 250px;
+  width: 100%;
+}
+
+.conference .col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.conference .events {
+  position: relative;
+}
+.conference .events .absolute {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+}
+
+.conference .events .overlay {
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fb0606;
+  z-index: 1;
+  opacity: 0.5;
 }
 
 @media (min-width: 768px) {
@@ -344,7 +445,7 @@ footer p {
     display: grid;
     grid-template-columns: 50% 50%;
   }
-  .speakers hr {
+  section.speakers hr {
     width: 10%;
   }
   section.speakers ul li img {
@@ -375,5 +476,26 @@ footer p {
   footer img {
     width: 169px;
     height: 78px;
+  }
+
+  /* ABOUT */
+  .header .about-h1 {
+    font-size: 54px;
+  }
+  .header .description {
+    margin: 10px auto;
+  }
+  .empowering {
+    padding: 5% 10%;
+  }
+
+  .conference {
+    padding: 5% 10%;
+  }
+  .conference .col {
+    flex-direction: row;
+  }
+  .conference .col .events {
+    flex-basis: 50%;
   }
 }
