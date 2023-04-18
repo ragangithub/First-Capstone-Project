@@ -149,21 +149,25 @@ section.speakers ul {
   gap: 20px;
   margin-top: 30px;
 }
+section.speakers ul li.mobile-hide {
+  display: none;
+}
 section.speakers ul li {
   display: flex;
   align-items: stretch;
   gap: 20px;
 }
 section.speakers ul li .left {
-  flex-basis: 50%;
+  flex-basis: 40%;
+  width: 20%;
 }
 section.speakers ul li img {
   width: 100%;
-  height: 90%;
-  max-height: 180px;
+  height: 100%;
 }
 section.speakers ul li .right {
-  flex-basis: 50%;
+  width: 100%;
+  height: 100%;
 }
 
 section.speakers ul li .right .title {
@@ -181,6 +185,7 @@ section.speakers .more {
   margin-top: 50px;
   gap: 0.5rem;
   color: #000;
+  cursor: pointer;
 }
 section.speakers .fa-chevron-down {
   color: red;
@@ -206,9 +211,6 @@ section.partner hr {
   height: 3px;
 }
 
-section.partner ul li {
-  /* flex-basis: 33.33%; */
-}
 section.partner ul li img {
   width: 80px;
   height: 80px;
@@ -448,10 +450,14 @@ footer p {
   section.speakers hr {
     width: 10%;
   }
-  section.speakers ul li img {
-    max-height: 225px;
-  }
 
+  section.speakers ul li img {
+    width: 100%;
+    height: 100%;
+  }
+  section.speakers ul li.mobile-hide {
+    display: flex;
+  }
   section.speakers .more {
     display: none;
   }
