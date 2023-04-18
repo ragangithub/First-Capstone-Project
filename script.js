@@ -68,3 +68,17 @@ more.addEventListener("click", () => {
   });
   more.style.display = "none";
 });
+
+// MOBILE MENU
+
+const menu = document.querySelector(".menu");
+const cancel = document.querySelector(".close");
+const menu_links = document.querySelector(".menu-links");
+
+menu.addEventListener("click", () => {
+  menu_links.style.display = "flex";
+  console.log("hi");
+});
+cancel.addEventListener("click", () => {
+  menu_links.style.display = "none";
+});
