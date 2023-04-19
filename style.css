@@ -79,7 +79,7 @@ header nav ul li a.campaign {
 }
 
 .header h1 {
-  font-size: 27px;
+  font-size: 34px;
   font-weight: 900;
   color: #ec5242;
   font-family: "COCOGOOSE", sans-serif;
@@ -241,6 +241,7 @@ section.speakers .more {
   gap: 0.5rem;
   color: #000;
   cursor: pointer;
+  width: 100%;
 }
 
 section.speakers .fa-chevron-down {
@@ -253,6 +254,10 @@ section.partner {
   padding: 5%;
   background-color: #414246;
   color: #fff;
+}
+
+section.partner.desktop-partner {
+  display: none;
 }
 
 section.partner h4 {
@@ -287,6 +292,10 @@ footer {
   display: flex;
   align-items: center;
   gap: 30px;
+}
+
+footer.desktop-footer {
+  display: none;
 }
 
 footer div {
@@ -335,27 +344,27 @@ footer p.footer-detail {
 
 .empowering h2 {
   text-align: center;
-  font-size: 18px;
+  font-size: 30px;
   margin-bottom: 10px;
 }
 
 .empowering hr.empowering-hr {
-  color: #fb0606;
-  height: 3px;
-  width: 30%;
+  height: 3.5px;
+  width: 12%;
   margin: 0 auto;
   margin-bottom: 30px;
+  background-color: #fb0606;
 }
 
-.empowering ul.lists {
-  margin-top: 30px;
+.empowering .issues .pan-african {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  justify-content: center;
 }
 
-.empowering ul.lists li.list {
-  font-size: 18px;
+.empowering .issues .pan-african img {
+  margin-top: 20px;
+  width: 150px;
+  height: 150px;
 }
 
 /* CONFERENCE */
@@ -364,11 +373,11 @@ footer p.footer-detail {
 }
 
 .conference hr.conference-hr {
-  color: #fb0606;
-  height: 3px;
-  width: 30%;
+  height: 3.5px;
+  width: 12%;
   margin: 0 auto;
   margin-bottom: 30px;
+  background-color: #fb0606;
 }
 
 .conference .col {
@@ -409,15 +418,27 @@ footer p.footer-detail {
   opacity: 0.5;
 }
 
+section.partner.about-partner {
+  display: block;
+}
+
 footer.about-footer {
-  background-color: #414246;
-  color: white;
+  background-color: white;
+  color: black;
 }
 
 @media (min-width: 768px) {
   .background {
     background-image: url(./images/desktop-background.png);
     padding: 7% 10% 80px 10%;
+  }
+
+  .header span {
+    font-size: 30px;
+  }
+
+  .header h1 {
+    font-size: 50px;
   }
 
   section.header nav .menu {
@@ -450,7 +471,6 @@ footer.about-footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 10%;
     background-color: white;
   }
 
@@ -466,13 +486,13 @@ footer.about-footer {
   header nav ul.menu-links {
     display: flex;
     justify-content: space-between;
-    flex: 1;
     position: static;
     height: initial;
     width: auto;
     flex-direction: row;
     background-color: #fff;
     padding: 0;
+    justify-self: flex-end;
   }
 
   header nav ul.menu-links li a {
@@ -480,7 +500,7 @@ footer.about-footer {
   }
 
   header nav ul li {
-    margin-left: 10px;
+    margin-left: 25px;
   }
 
   header nav ul li a.nav-link {
@@ -557,6 +577,10 @@ footer.about-footer {
 
   /* SECTION PARTNERS */
 
+  section.partner.desktop-partner {
+    display: block;
+  }
+
   section.partner hr {
     width: 10%;
   }
@@ -571,6 +595,10 @@ footer.about-footer {
     justify-content: center;
   }
 
+  footer.desktop-footer {
+    display: flex;
+  }
+
   footer div {
     flex-basis: 20%;
   }
@@ -581,8 +609,12 @@ footer.about-footer {
   }
 
   /* ABOUT */
+  .header .hello span.span-hello {
+    font-size: 30px;
+  }
+
   .header .about-h1 {
-    font-size: 54px;
+    font-size: 50px;
   }
 
   .header .description {
@@ -603,5 +635,14 @@ footer.about-footer {
 
   .conference .col .events {
     flex-basis: 50%;
+  }
+
+  section.partner.about-partner {
+    display: none;
+  }
+
+  footer.about-footer {
+    background-color: #37383c;
+    color: white;
   }
 }
