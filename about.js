@@ -1,13 +1,12 @@
 // MOBILE MENU
 
-const menu = document.querySelector(".menu");
-const cancel = document.querySelector(".close");
-const menu_links = document.querySelector(".menu-links");
+const menu = document.querySelector('.menu');
+const cancel = document.querySelector('.close');
+const menuLinks = document.querySelector('.menu-links');
 
-menu.addEventListener("click", () => {
-  menu_links.style.display = "block";
-  console.log("hi");
+menu.addEventListener('click', () => {
+  menuLinks.style.display = 'block';
 });
-cancel.addEventListener("click", () => {
-  menu_links.style.display = "none";
+cancel.addEventListener('click', () => {
+  menuLinks.style.display = 'none';
 });
