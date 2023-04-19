@@ -1,0 +1,657 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.background {
+  background-image: url(./images/mobile-background.png);
+  background-size: 100% 100%;
+  background-clip: initial;
+  background-repeat: no-repeat;
+  background-position: left;
+  padding: 7% 5% 80px 5%;
+}
+
+header .links {
+  display: none;
+}
+
+header nav .logo {
+  display: none;
+}
+
+header nav ul.menu-links {
+  flex-direction: column;
+  padding: 30% 0 0 5%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  background-color: #6070ff;
+  opacity: 0.98;
+  width: 100%;
+  height: 100vh;
+  display: none;
+}
+
+header nav ul .close {
+  color: white;
+  position: absolute;
+  right: 8%;
+  top: 8%;
+  font-size: 35px;
+}
+
+header nav ul li a.nav-link {
+  display: inline-block;
+  color: #272a31;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+header nav ul li a.campaign {
+  color: red;
+  padding: 5px 10px;
+  border: 5px solid #ec5242;
+}
+
+.header .fa-bars {
+  font-size: 30px;
+  margin-bottom: 60px;
+}
+
+.header span {
+  font-size: 22px;
+  color: #ec5242;
+  margin-bottom: 10px;
+}
+
+.header h1 {
+  font-size: 34px;
+  font-weight: 900;
+  color: #ec5242;
+  font-family: "COCOGOOSE", sans-serif;
+}
+
+.header p {
+  background-color: #f7f7f8;
+  color: #272a31;
+  font-size: 17px;
+  border: 2px solid #fff;
+  padding: 3%;
+  margin: 17px 0 13px 0;
+}
+
+.header .headerDate {
+  font-weight: 800;
+  color: #272a31;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.header .headerAt {
+  color: #272a31;
+  font-size: 20px;
+}
+
+/* MAIN PROGRAM */
+
+.program {
+  padding: 10% 5%;
+  background-image: url(./images/unsplash.jpg);
+  background-size: 100% 100%;
+  background-clip: initial;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+}
+
+.program h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.program hr {
+  background-color: #fb0606;
+  height: 3px;
+  width: 30%;
+  margin: 0 auto;
+}
+
+.program ul.program-ul {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.program ul.program-ul li {
+  padding: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #212224;
+}
+
+.program ul.program-ul li span {
+  color: #ec5242;
+  font-size: 17px;
+}
+
+.program ul.program-ul li .right {
+  flex-basis: 50%;
+  line-height: 20px;
+}
+
+.program .join-awe-mobile {
+  display: inline-block;
+  background-color: red;
+  background-color: #ec5242;
+  padding: 8% 8%;
+  text-align: center;
+  color: #fff;
+}
+
+.program .join-awe-desktop {
+  display: none;
+}
+
+.program .link {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* SECTION SPEAKERS */
+
+section.speakers {
+  padding: 5%;
+}
+
+section.speakers hr {
+  background-color: #fb0606;
+  width: 30%;
+  margin: 0 auto;
+  height: 3px;
+}
+
+h3 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+section.speakers ul.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+section.speakers ul.container li.mobile-hide {
+  display: none;
+}
+
+section.speakers ul.container li {
+  display: flex;
+  align-items: stretch;
+  gap: 20px;
+}
+
+section.speakers ul.container li .left {
+  flex-basis: 40%;
+  width: 20%;
+}
+
+section.speakers ul.container li img {
+  width: 100%;
+  height: 100%;
+}
+
+section.speakers ul.container li .right {
+  width: 100%;
+  height: 100%;
+}
+
+section.speakers ul.container li .right .title {
+  color: red;
+  margin: 10px 0 7px 0;
+}
+
+section.speakers .more {
+  border: 1px solid #272a31;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  gap: 0.5rem;
+  color: #000;
+  cursor: pointer;
+  width: 100%;
+}
+
+section.speakers .fa-chevron-down {
+  color: red;
+}
+
+/* SECTION PARTNER */
+
+section.partner {
+  padding: 5%;
+  background-color: #414246;
+  color: #fff;
+}
+
+section.partner.desktop-partner {
+  display: none;
+}
+
+section.partner h4 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+section.partner hr {
+  background-color: #fb0606;
+  width: 30%;
+  margin: 0 auto;
+  height: 3px;
+}
+
+section.partner ul li img.partner-image {
+  width: 80px;
+  height: 80px;
+}
+
+section.partner ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+footer {
+  padding: 5%;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+footer.desktop-footer {
+  display: none;
+}
+
+footer div {
+  flex-basis: 50%;
+}
+
+footer div img.footer-image {
+  width: 100%;
+  height: 100%;
+}
+
+footer p.footer-detail {
+  font-size: 14px;
+}
+
+/* ABOUT */
+
+.header .hello {
+  display: flex;
+  justify-content: center;
+}
+
+.header .hello span.span-hello {
+  font-size: 22px;
+  color: #ec5242;
+  margin-bottom: 10px;
+}
+
+.header .about-h1 {
+  font-size: 34px;
+  text-align: center;
+}
+
+.header .description {
+  justify-content: center;
+}
+
+.header .queries {
+  text-align: center;
+}
+
+/* EMPOWERING */
+.empowering {
+  padding: 5%;
+}
+
+.empowering h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.empowering hr.empowering-hr {
+  height: 3.5px;
+  width: 12%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  background-color: #fb0606;
+}
+
+.empowering .issues p {
+  padding: 0 10%;
+  text-align: center;
+}
+
+.empowering .issues .pan-african {
+  display: flex;
+  justify-content: center;
+}
+
+.empowering .issues .pan-african img {
+  margin-top: 20px;
+  width: 150px;
+  height: 150px;
+}
+
+/* CONFERENCE */
+.conference {
+  padding: 5%;
+}
+
+.conference hr.conference-hr {
+  height: 3.5px;
+  width: 12%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  background-color: #fb0606;
+}
+
+.conference .col {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.conference .col .events img {
+  height: 250px;
+  width: 100%;
+}
+
+.conference .events {
+  position: relative;
+}
+
+.conference .events .absolute {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+}
+
+.conference .events .overlay {
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fb0606;
+  z-index: 1;
+  opacity: 0.5;
+}
+
+section.partner.about-partner {
+  display: block;
+}
+
+footer.about-footer {
+  background-color: white;
+  color: black;
+}
+
+@media (min-width: 768px) {
+  .background {
+    background-image: url(./images/desktop-background.png);
+    padding: 7% 10% 80px 10%;
+  }
+
+  .header span {
+    font-size: 30px;
+  }
+
+  .header h1 {
+    font-size: 50px;
+  }
+
+  section.header nav .menu {
+    display: none;
+  }
+
+  header .links {
+    display: block;
+    background-color: #272a31;
+    padding: 6px 10%;
+  }
+
+  header nav .logo {
+    display: block;
+  }
+
+  header .links ul {
+    display: flex;
+    justify-content: right;
+    color: #fff;
+    gap: 20px;
+  }
+
+  header .links ul li .fa-brands {
+    color: white;
+  }
+
+  header nav {
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+  }
+
+  header nav img {
+    width: 100px;
+    height: 100px;
+  }
+
+  header nav ul.menu-links .close {
+    display: none;
+  }
+
+  header nav ul.menu-links {
+    display: flex;
+    justify-content: space-between;
+    position: static;
+    height: initial;
+    width: auto;
+    flex-direction: row;
+    background-color: #fff;
+    padding: 0;
+    justify-self: flex-end;
+  }
+
+  header nav ul.menu-links li a {
+    margin-bottom: 0;
+  }
+
+  header nav ul li {
+    margin-left: 25px;
+  }
+
+  header nav ul li a.nav-link {
+    color: #272a31;
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  header nav ul li a.campaign {
+    color: red;
+    padding: 5px 10px;
+    border: 5px solid #ec5242;
+  }
+
+  /* SECTION HEADER */
+
+  .header p {
+    width: 58%;
+  }
+
+  /* MAIN PROGRAM */
+
+  .program {
+    padding: 10% 10%;
+  }
+
+  .program ul.program-ul {
+    flex-direction: row;
+  }
+
+  .program ul.program-ul li {
+    flex-direction: column;
+    justify-content: start;
+    gap: 5px;
+  }
+
+  .program hr {
+    background-color: #fb0606;
+    width: 10%;
+  }
+
+  .program .join-awe-mobile {
+    display: none;
+  }
+
+  .program .join-awe-desktop {
+    display: inline-block;
+    color: #fff;
+    border-bottom: 1px solid white;
+  }
+
+  /* SECTION SPEAKERS */
+  section.speakers ul.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  section.speakers hr {
+    width: 10%;
+  }
+
+  section.speakers ul.container li img {
+    width: 100%;
+    height: 100%;
+  }
+
+  section.speakers ul.container li.mobile-hide {
+    display: flex;
+  }
+
+  section.speakers .more {
+    display: none;
+  }
+
+  /* SECTION PARTNERS */
+
+  section.partner.desktop-partner {
+    display: block;
+  }
+
+  section.partner hr {
+    width: 10%;
+  }
+
+  section.partner ul li img.partner-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  /* FOOTER */
+  footer {
+    justify-content: center;
+  }
+
+  footer.desktop-footer {
+    display: flex;
+  }
+
+  footer div {
+    flex-basis: 20%;
+  }
+
+  footer img.footer-image {
+    width: 169px;
+    height: 78px;
+  }
+
+  /* ABOUT */
+  .header .hello span.span-hello {
+    font-size: 30px;
+  }
+
+  .header .about-h1 {
+    font-size: 50px;
+  }
+
+  .header .description {
+    margin: 10px auto;
+  }
+
+  .empowering {
+    padding: 5% 10%;
+  }
+
+  .empowering .issues p {
+    padding: 0 15%;
+  }
+
+  .conference {
+    padding: 5% 10%;
+  }
+
+  .conference .col {
+    flex-direction: row;
+  }
+
+  .conference .col .events {
+    flex-basis: 50%;
+  }
+
+  section.partner.about-partner {
+    display: none;
+  }
+
+  footer.about-footer {
+    background-color: #37383c;
+    color: white;
+  }
+}
